@@ -7,7 +7,7 @@ import cv2
 import pytesseract
 import numpy as np
 
-img = cv2.imread('0.png')#Alternatively: can be skipped if you have a Blackwhite image
+img = cv2.imread('pic.png')#Alternatively: can be skipped if you have a Blackwhite image
 gray = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
 gray, img_bin = cv2.threshold(gray,128,255,cv2.THRESH_BINARY | cv2.THRESH_OTSU)
 gray = cv2.bitwise_not(img_bin)

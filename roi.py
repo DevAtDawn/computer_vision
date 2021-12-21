@@ -1,15 +1,20 @@
 import cv2
 import numpy as np
+import json
 
 def select_roi():
+
     # Read image
     im = cv2.imread("pic.png")
     # im = cv2.imread("image.jpg")
 
     # Select ROI
-    # r = cv2.selectROI(im)
+    r = cv2.selectROI(im)
     # r = (71, 490, 507, 138)
+
     print(r)
+    print(json.dumps(r))
+
     # Crop image
     imCrop = im[int(r[1]):int(r[1]+r[3]), int(r[0]):int(r[0]+r[2])]
  
