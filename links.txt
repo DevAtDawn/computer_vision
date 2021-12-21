@@ -1,3 +1,4 @@
 https://www.youtube.com/watch?v=_JdTAVZRExE
 https://techvidvan.com/tutorials/python-project-license-number-plate-recognition/
 https://nanonets.com/blog/ocr-with-tesseract/
+https://learnopencv.com/how-to-select-a-bounding-box-roi-in-opencv-cpp-python/
